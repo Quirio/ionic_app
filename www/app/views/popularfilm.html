@@ -1,0 +1,11 @@
+﻿<ion-view>
+  <ion-content>
+    <ion-scroll direction="x" class="scrollx"">
+    <div class="row">
+      <itemlistelement ng-repeat="item in popularfilms.results" id="{{item.id}}" item="item" onclick="todetails(item.id)" type="films"></itemlistelement>
+    </div>
+    </ion-scroll>
+    <div ui-view="details"></div>
+  </ion-content>
+</ion-view>
+
